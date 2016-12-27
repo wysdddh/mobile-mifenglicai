@@ -1,0 +1,47 @@
+@charset "utf-8";
+/*字体大小*/
+.t18{ font-size: 18px;}
+.t20{ font-size: 20px;}
+.t24{ font-size: 24px;}
+.t28{ font-size: 28px;}
+.t30{ font-size: 30px;}
+.t32{ font-size: 32px;}
+/*box盒子*/
+.rowBox{
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+}
+.colBox{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	display: -moz-box;
+	-moz-box-orient: vertical;
+}
+.left{ float: left;}
+.right{ float: right;}
+.clear{ clear: both;}
+/*按钮*/
+.btn{ display: block; border-radius: 5px;}
+/*表单样式*/
+input[type=text],input[type=password]{ height: 68px; line-height: 68px; color: #333;}
+/*图标样式*/
+.icon{ display: inline-block;}
+/*提示信息*/
+.tip{ color: #cc7171;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

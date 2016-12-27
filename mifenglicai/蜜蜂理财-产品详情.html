@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>产品详情</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<script src="js/zepto.min.all.js"></script>
+		<script type="text/javascript">
+			var phoneWidth = parseInt(window.screen.width);
+				var phoneScale = phoneWidth/640;
+				var ua = navigator.userAgent;
+				if (/Android (\d+\.\d+)/.test(ua)){
+					var version = parseFloat(RegExp.$1);
+					// andriod 2.3
+					if(version>2.3){
+						document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+					// andriod 2.3以上
+					}else{
+						document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+					}
+					// 其他系统
+				} else {
+					document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+				}
+		</script>
+		<style>
+			body{ background: #fff; padding-bottom: 100px;}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="cp-head">
+			<div class="l"><span class="font-icon">友</span><span>昵称最多八个字团</span>
+			</div>
+			<div class="r"><span>一级V蜂：159****6354</span>
+			</div>
+		</div>
+		<p class="cp-time">募集倒计时：<span class="day">6</span>天<span class="hours">23</span class="Minutes">小时<span>59</span>分</p>
+
+		<div class="Chart">
+			<div class="ChartWarp">
+				<img class="ChartBg" src="imgs/ChartBg.png" />
+				<img class="ChartBg2" src="imgs/imgs01.png" alt="" />
+				<ul class="l">
+					<li>19+人---------
+						<div class='chartbtns'>
+							<p>+</p>
+							<p>1.2%</p>
+						</div>
+					</li>
+					<li>10人----
+						<div class='chartbtns'>
+							<p>+</p>
+							<p>0.7%</p>
+						</div>
+					</li>
+					<li>3人----
+						<div class='chartbtns'>
+							<p>+</p>
+							<p>0.3%</p>
+						</div>
+					</li>
+					<li>1人---------</li>
+				</ul>
+				<ul class="r">
+					<li>---------100+万
+						<div class='chartbtns'>
+							<p>+</p>
+							<p>1.9%</p>
+						</div>
+					</li>
+					<li>-----50万
+						<div class='chartbtns'>
+							<p>+</p>
+							<p>1.7%</p>
+						</div>
+					</li>
+					<li>----10万
+						<div class='chartbtns'>
+							<p>+</p>
+							<p>1.2%</p>
+						</div>
+					</li>
+					<li>----1万
+						<div class='chartbtns'>
+							<p>+</p>
+							<p>0.7%</p>
+						</div>
+					</li>
+					<li>------100元</li>
+				</ul>
+				<div class="warp">
+					<p class="Chart-p1">12.1%</p>
+					<p class="Chart-p2">当前年化收益</p>
+					<p class="Chart-p3">最高预期</p>
+					<p class="Chart-p4">15.0%</p>
+				</div>
+
+				<div class="ChartBtnL">
+					<p>+</p>
+					<p>0.0%</p>
+				</div>
+				<div class="ChartBtnR">
+					<p>+</p>
+					<p>0.6%</p>
+				</div>
+			</div>
+			<div class="Chart-oth">
+				<div class="l">
+					<p>当前人数</p>
+					<p>2</p>
+				</div>
+				<span class="mx">收益明细</span>
+				<div class="r">
+					<p>当前金额</p>
+					<p>125,000元</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="Chart-Tip">基础<span id="base_profit">11.6</span>%+团长级别2%+团长特权2%+团购金额收益0.6%</div>
+
+		<div class="Chart-btnBox">
+			<div>
+				<a href="#" term="90" profit="7.6">90天账户</a>
+			</div>
+			<div>
+				<a href="#" term="180" profit="9.6">180天账户</a>
+			</div>
+			<div>
+				<a href="#" class="active" term="365" profit="11.6">365天账户</a>
+			</div>
+		</div>
+
+		<div class="cp-fx">
+			<p>邀请好友一起赚钱吧！</p>
+			<a href="#" class="mf-fx-btn">分享好友</a>
+			<a href="#" class="disable">资金转入</a>
+		</div>
+
+		<div class="toAs">
+			<div class="btn">我转入的资金3000元<img src="imgs/icon-11.png" alt="" /></div>
+			<ul>
+				<li>
+					<div>1.  期限：180天 </div>
+					<div>金额500元</div>
+					<div>2015-02-12</div>
+				</li>
+				<li>
+					<div>1.  期限：180天 </div>
+					<div>金额500元</div>
+					<div>2015-02-12</div>
+				</li>
+				<li>
+					<div>1.  期限：180天 </div>
+					<div>金额500元</div>
+					<div>2015-02-12</div>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="mf-fx">
+			<img src="imgs/mf-fx.png" />
+		</div>
+
+	</body>
+	<script src="js/Chart.js"></script>
+	<script>
+		$(function(){
+			//分享提示
+			$(".mf-fx-btn").on("tap",function(){
+				$(".mf-fx").show();
+			})
+			$(".mf-fx").on("tap",function(){
+				$(this).hide()
+			})
+			$(".btn").on("tap",function(){
+				if($(this).hasClass("active")){
+					$(this).removeClass("active");
+					$(".toAs").find("ul").hide();
+				}else{
+					$(this).addClass("active");
+					$(".toAs").find("ul").show();
+				}
+			})
+		})
+	</script>
+</html>
